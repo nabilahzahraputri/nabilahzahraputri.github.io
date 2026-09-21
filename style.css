@@ -1,0 +1,232 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 20px;
+
+    background-color: #f4f6f9;
+    color: #111;
+
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    line-height: 1.25;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: auto;
+
+    background-color: #fff;
+
+    padding: 40px;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.profile-img {
+    width: 110px;
+    height: 110px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 3px solid #3498db;
+
+    flex-shrink: 0;
+}
+
+
+.header-text {
+    flex: 1;
+
+    padding-left: 35px;
+}
+
+
+.header-text h1 {
+    margin: 0 0 4px 0;
+
+    color: #111;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.header-text p {
+    margin: 0;
+
+    font-size: 13px;
+}
+
+
+.header-text a {
+    color: #000;
+    text-decoration: underline;
+}
+
+
+section {
+    margin-bottom: 20px;
+}
+
+
+h2 {
+    margin: 0 0 12px 0;
+
+    padding-bottom: 4px;
+
+    border-bottom: 1.5px solid #111;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0 0 7px 0;
+
+    text-align: justify;
+}
+
+.about {
+    margin-bottom: 25px;
+}
+
+.education-item {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: baseline;
+
+    margin-bottom: 2px;
+}
+
+
+.education-item strong {
+    font-size: 14px;
+}
+
+
+.education-item span {
+    font-style: italic;
+
+    white-space: nowrap;
+}
+
+.experience-item {
+    margin-bottom: 10px;
+}
+
+
+.experience-title {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: baseline;
+
+    margin-bottom: 2px;
+}
+
+
+.experience-title strong {
+    font-size: 14px;
+}
+
+
+.experience-title span {
+    font-style: italic;
+
+    white-space: nowrap;
+}
+
+ul {
+    margin: 0;
+
+    padding-left: 25px;
+}
+
+
+li {
+    margin-bottom: 2px;
+}
+
+.certification ul {
+    margin-top: 2px;
+}
+
+section p {
+    margin-bottom: 3px;
+}
+
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 15mm;
+    }
+
+    body {
+        padding: 0;
+
+        background-color: white;
+
+        font-size: 12px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: none;
+
+        padding: 0;
+    }
+
+    header {
+        margin-bottom: 20px;
+    }
+
+    .profile-img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .header-text {
+        padding-left: 30px;
+    }
+
+    .header-text h1 {
+        font-size: 20px;
+    }
+
+    .header-text p {
+        font-size: 11px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    section {
+        margin-bottom: 15px;
+    }
+
+    p,
+    li,
+    .education-item strong,
+    .experience-title strong {
+        font-size: 11px;
+    }
+}
